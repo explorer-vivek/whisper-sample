@@ -1,0 +1,437 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		9311BEDB2AA94E2B00C744F5 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9311BEDA2AA94E2B00C744F5 /* AppDelegate.swift */; };
+		9311BEDD2AA94E2B00C744F5 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9311BEDC2AA94E2B00C744F5 /* ViewController.swift */; };
+		9311BEDF2AA94E2C00C744F5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9311BEDE2AA94E2C00C744F5 /* Assets.xcassets */; };
+		9311BEE22AA94E2C00C744F5 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9311BEE02AA94E2C00C744F5 /* Main.storyboard */; };
+		9311BEEB2AA94EEE00C744F5 /* SwiftWhisper in Frameworks */ = {isa = PBXBuildFile; productRef = 9311BEEA2AA94EEE00C744F5 /* SwiftWhisper */; };
+		9311BEF32AA9521E00C744F5 /* ggml-tiny.en.bin in Copy models */ = {isa = PBXBuildFile; fileRef = 9311BEF02AA951D400C744F5 /* ggml-tiny.en.bin */; };
+		9311BEF62AA952B200C744F5 /* jfk.wav in Resources */ = {isa = PBXBuildFile; fileRef = 9311BEF52AA952B200C744F5 /* jfk.wav */; };
+		9311BEF82AA952CC00C744F5 /* jfk.wav in Copy samples */ = {isa = PBXBuildFile; fileRef = 9311BEF52AA952B200C744F5 /* jfk.wav */; };
+		9311BEFB2AA9538D00C744F5 /* AudioKit in Frameworks */ = {isa = PBXBuildFile; productRef = 9311BEFA2AA9538D00C744F5 /* AudioKit */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		9311BEF22AA9521000C744F5 /* Copy models */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = models;
+			dstSubfolderSpec = 7;
+			files = (
+				9311BEF32AA9521E00C744F5 /* ggml-tiny.en.bin in Copy models */,
+			);
+			name = "Copy models";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9311BEF72AA952BE00C744F5 /* Copy samples */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = samples;
+			dstSubfolderSpec = 7;
+			files = (
+				9311BEF82AA952CC00C744F5 /* jfk.wav in Copy samples */,
+			);
+			name = "Copy samples";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		9311BED72AA94E2B00C744F5 /* test.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = test.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		9311BEDA2AA94E2B00C744F5 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		9311BEDC2AA94E2B00C744F5 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		9311BEDE2AA94E2C00C744F5 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		9311BEE12AA94E2C00C744F5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		9311BEE32AA94E2C00C744F5 /* test.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = test.entitlements; sourceTree = "<group>"; };
+		9311BEF02AA951D400C744F5 /* ggml-tiny.en.bin */ = {isa = PBXFileReference; lastKnownFileType = archive.macbinary; path = "ggml-tiny.en.bin"; sourceTree = "<group>"; };
+		9311BEF52AA952B200C744F5 /* jfk.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = jfk.wav; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		9311BED42AA94E2B00C744F5 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9311BEFB2AA9538D00C744F5 /* AudioKit in Frameworks */,
+				9311BEEB2AA94EEE00C744F5 /* SwiftWhisper in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		9311BECE2AA94E2B00C744F5 = {
+			isa = PBXGroup;
+			children = (
+				9311BEF42AA952B200C744F5 /* samples */,
+				9311BEEF2AA951D400C744F5 /* models */,
+				9311BED92AA94E2B00C744F5 /* test */,
+				9311BED82AA94E2B00C744F5 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		9311BED82AA94E2B00C744F5 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				9311BED72AA94E2B00C744F5 /* test.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		9311BED92AA94E2B00C744F5 /* test */ = {
+			isa = PBXGroup;
+			children = (
+				9311BEDA2AA94E2B00C744F5 /* AppDelegate.swift */,
+				9311BEDC2AA94E2B00C744F5 /* ViewController.swift */,
+				9311BEDE2AA94E2C00C744F5 /* Assets.xcassets */,
+				9311BEE02AA94E2C00C744F5 /* Main.storyboard */,
+				9311BEE32AA94E2C00C744F5 /* test.entitlements */,
+			);
+			path = test;
+			sourceTree = "<group>";
+		};
+		9311BEEF2AA951D400C744F5 /* models */ = {
+			isa = PBXGroup;
+			children = (
+				9311BEF02AA951D400C744F5 /* ggml-tiny.en.bin */,
+			);
+			name = models;
+			path = test/Resources/models;
+			sourceTree = "<group>";
+		};
+		9311BEF42AA952B200C744F5 /* samples */ = {
+			isa = PBXGroup;
+			children = (
+				9311BEF52AA952B200C744F5 /* jfk.wav */,
+			);
+			name = samples;
+			path = test/Resources/samples;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		9311BED62AA94E2B00C744F5 /* test */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 9311BEE62AA94E2C00C744F5 /* Build configuration list for PBXNativeTarget "test" */;
+			buildPhases = (
+				9311BED32AA94E2B00C744F5 /* Sources */,
+				9311BED42AA94E2B00C744F5 /* Frameworks */,
+				9311BED52AA94E2B00C744F5 /* Resources */,
+				9311BEF22AA9521000C744F5 /* Copy models */,
+				9311BEF72AA952BE00C744F5 /* Copy samples */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = test;
+			packageProductDependencies = (
+				9311BEEA2AA94EEE00C744F5 /* SwiftWhisper */,
+				9311BEFA2AA9538D00C744F5 /* AudioKit */,
+			);
+			productName = test;
+			productReference = 9311BED72AA94E2B00C744F5 /* test.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		9311BECF2AA94E2B00C744F5 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1420;
+				LastUpgradeCheck = 1420;
+				TargetAttributes = {
+					9311BED62AA94E2B00C744F5 = {
+						CreatedOnToolsVersion = 14.2;
+					};
+				};
+			};
+			buildConfigurationList = 9311BED22AA94E2B00C744F5 /* Build configuration list for PBXProject "test" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 9311BECE2AA94E2B00C744F5;
+			packageReferences = (
+				9311BEE92AA94EEE00C744F5 /* XCRemoteSwiftPackageReference "SwiftWhisper" */,
+				9311BEF92AA9538D00C744F5 /* XCRemoteSwiftPackageReference "AudioKit" */,
+			);
+			productRefGroup = 9311BED82AA94E2B00C744F5 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				9311BED62AA94E2B00C744F5 /* test */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		9311BED52AA94E2B00C744F5 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9311BEF62AA952B200C744F5 /* jfk.wav in Resources */,
+				9311BEDF2AA94E2C00C744F5 /* Assets.xcassets in Resources */,
+				9311BEE22AA94E2C00C744F5 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		9311BED32AA94E2B00C744F5 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9311BEDD2AA94E2B00C744F5 /* ViewController.swift in Sources */,
+				9311BEDB2AA94E2B00C744F5 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		9311BEE02AA94E2C00C744F5 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				9311BEE12AA94E2C00C744F5 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		9311BEE42AA94E2C00C744F5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 12.5;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		9311BEE52AA94E2C00C744F5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 12.5;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = macosx;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+			};
+			name = Release;
+		};
+		9311BEE72AA94E2C00C744F5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = test/test.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				INFOPLIST_KEY_NSMainStoryboardFile = Main;
+				INFOPLIST_KEY_NSPrincipalClass = NSApplication;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.test;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		9311BEE82AA94E2C00C744F5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = test/test.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				INFOPLIST_KEY_NSMainStoryboardFile = Main;
+				INFOPLIST_KEY_NSPrincipalClass = NSApplication;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.test;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		9311BED22AA94E2B00C744F5 /* Build configuration list for PBXProject "test" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9311BEE42AA94E2C00C744F5 /* Debug */,
+				9311BEE52AA94E2C00C744F5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		9311BEE62AA94E2C00C744F5 /* Build configuration list for PBXNativeTarget "test" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9311BEE72AA94E2C00C744F5 /* Debug */,
+				9311BEE82AA94E2C00C744F5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		9311BEE92AA94EEE00C744F5 /* XCRemoteSwiftPackageReference "SwiftWhisper" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/exPHAT/SwiftWhisper.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 1.0.0;
+			};
+		};
+		9311BEF92AA9538D00C744F5 /* XCRemoteSwiftPackageReference "AudioKit" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/AudioKit/AudioKit.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		9311BEEA2AA94EEE00C744F5 /* SwiftWhisper */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 9311BEE92AA94EEE00C744F5 /* XCRemoteSwiftPackageReference "SwiftWhisper" */;
+			productName = SwiftWhisper;
+		};
+		9311BEFA2AA9538D00C744F5 /* AudioKit */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 9311BEF92AA9538D00C744F5 /* XCRemoteSwiftPackageReference "AudioKit" */;
+			productName = AudioKit;
+		};
+/* End XCSwiftPackageProductDependency section */
+	};
+	rootObject = 9311BECF2AA94E2B00C744F5 /* Project object */;
+}
